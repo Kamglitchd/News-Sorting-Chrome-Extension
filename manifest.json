@@ -1,0 +1,7 @@
+{
+    "name": "News?",
+    "description": "Chrome extension to tag opinion and news stories in google search from the Washington post.",
+	"version": "1.0",
+	
+	"manifest_version": 2 
+}
