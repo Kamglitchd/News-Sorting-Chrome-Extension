@@ -5,10 +5,11 @@
 	"manifest_version": 2,
 
     "background": {
-        "scripts": ["./background.js"]
+        "scripts": ["background.js"],
+        "persistent": false
     },
 
-    "options_page": "./options.html",
+    "options_page": "options.html",
 
     "browser_action": {
         "default_icon": "news.png",
@@ -19,6 +20,6 @@
         "https://google.com/*", 
         "http://google.com/*",
         "storage",
-        "tabs"
+        "activeTab"
     ]
 }
