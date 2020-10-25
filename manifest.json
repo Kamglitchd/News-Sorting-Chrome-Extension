@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+  
+    "name": "News Sorter",
+    "description": "This extension will filter the new recieves on google",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "news.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab"
+     ]
+  }
