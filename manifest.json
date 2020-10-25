@@ -1,15 +1,24 @@
 {
-    "manifest_version": 2,
-  
-    "name": "News Sorter",
-    "description": "This extension will filter the new recieves on google",
-    "version": "1.0",
-  
-    "browser_action": {
-     "default_icon": "news.png",
-     "default_popup": "popup.html"
+    "name": "News?",
+    "description": "Chrome extension to tag opinion and news stories in google search from the Washington post.",
+	"version": "0.1.0",
+	"manifest_version": 2,
+
+    "background": {
+        "scripts": ["./background.js"]
     },
+
+    "options_page": "./options.html",
+
+    "browser_action": {
+        "default_icon": "news.png",
+        "default_popup": "popup.html"
+    },
+
     "permissions": [
-     "activeTab"
-     ]
-  }
+        "https://google.com/*", 
+        "http://google.com/*",
+        "storage",
+        "tabs"
+    ]
+}
